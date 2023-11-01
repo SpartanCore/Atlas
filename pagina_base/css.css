@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    }
+    
+    body{
+      background-color: white;
+    }
+    header {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid rgb(180, 180, 180);
+    z-index: 9999;
+  }
+  .logo-imagem{
+    width: 10%;
+    margin-left: 20px;
+  }
+  .logo-imagem::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+  }
+  .logo-imagem:hover{
+    scale: 1.25;
+    transition: 0.5s;
+  }
+  .menu li{
+    display:inline-flex;
+    margin: 0 50px;
+  }
+  .menu li a{
+    font-size: 23px;
+    text-decoration:none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    position: relative;
+    margin-left: 20px;
+  }
+  .menu li a::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .menu li a:hover::after{
+    width: 100%;
+  }
+  .search-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: 250px;
+}
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.search-icon::before {
+  content: '';
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+
+.search-icon::after {
+  content: '';
+  width: 20%;
+  height: 2px;
+  background-color: red;
+}
+
+.search-input {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding-left: 40px;
+  transition: all 0.7s;
+  width: 300px;
+  box-shadow: 2px 2px 5px #777;
+}
+.search-input:valid {
+  width: 300px;
+}
+
+footer {
+    background-color: black;
+    bottom: 0;
+    position: static;
+    width: 100%;
+    color: white;
+  }
+  footer .container-footer{
+    display:flex;
+    margin-left: 120px;
+    
+  }
+  footer .container-footer ul {
+    width: 25%;
+    list-style: none;
+    margin-left: 25px;
+  }
+  footer .container-footer .redes-sociais img{
+    width: 35px;
+    margin-right: 15px;
+  }
+  footer .container-footer ul > p{
+    margin-bottom: 10px;
+  }
+  footer .container-footer li{
+    margin: 10px 0;
+  }
+  footer .container-footer a{
+    color: white;
+    text-decoration: none;
+  }
+  footer .container-footer a:hover{
+    font-size: 19px;
+    transition: 0.2s;
+  }

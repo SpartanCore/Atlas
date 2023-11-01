@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Spartan Core</title>
+  <link rel="stylesheet" type="text/css" href="cadastro.css" />
+  <meta charset="UTF-8">
+</head>
+  
+<body>
+  <header>
+
+    <div class="logo-imagem"><a href="./cadastro.html"><img src="../Imagens/logo_spartan_core_branco.png"
+          width="100%"></a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="../suplementos/suplementos.html">Suplementos</a></li>
+        <li><a href="../parcerias/parcerias.html">Parcerias</a></li>
+        <li><a href="../novidades/novidades.html">Novidades</a></li>
+        <li>
+          <div class="search-container">
+            <label for="search-input" class="search-icon"></label>
+            <input type="text" class="search-input" id="search-input" required />
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </header>
+
+  <div class="login-container">
+    <h1>Cadastre-se</h1>
+    <form method="post" action="../php/insert_cadastro.php">
+      <div class="login-text">
+        <label for="email">Email</Label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="senha">Senha</label>
+        <br>
+        <input type="password" id="senha" name="senha" required minlength="5">
+        <br>
+        <br>
+        <a href="login.html">Login</a>
+        <br>
+        <a href="esqueci_senha">Esqueci a Senha?</a>
+        <br>
+        <div class=botao-login>
+          <input type="submit" class="formulario" value="Cadastre-se" />
+    </form>
+  </div>
+  </div>
+  </div>
+  <footer>
+    <div class="container-footer">
+      <ul>
+        <h3>Spartan Core</h3>
+        <p>A Empresa Atlas tem como principal objetivo o Desenvolvimento Pessoal, Assim trazendo o Projeto Spartan Core.
+        </p>
+        <div class="redes-sociais">
+          <img src="../Imagens/instagram.png" alt="instagram">
+          <img src="../Imagens/facebook.png" alt="facebook">
+          <img src="../Imagens/twitter.png" alt="twitter">
+        </div>
+      </ul>
+
+
+
+      <ul>
+        <li>
+          <h3>Contatos</h3>
+        </li>
+        <li>
+          <p>
+            +55 11 97363-7543
+          </p>
+        </li>
+        <li>
+          <p>
+            spartancorefc@gmail.com
+          </p>
+        </li>
+        <li>
+          <p>
+            Brasil
+          </p>
+        </li>
+        <li>
+          <p>
+            Poá
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <h3>Suporte</h3>
+        </li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Caracteristicas</a></li>
+        <li><a href="#">Como Funciona</a></li>
+        <li><a href="#">Serviços</a></li>
+
+      </ul>
+
+      <ul>
+        <li>
+          <h3>Links</h3>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Suplementos</a></li>
+        <li><a href="#">Parcerias</a></li>
+        <li><a href="#">Novidades</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+
+
+
+
+    </div>
+  </footer>
+</body>
+
+</html>
